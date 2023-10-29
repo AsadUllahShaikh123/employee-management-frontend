@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const ListEmployeeComponent = () => {
   return (
     <div className='container'>
-        <a className='btn btn-primary mb-2 mt-3' href="index.html">Add Employee</a>
+        <Link to={"/add-employee"} className='btn btn-primary mb-2 mt-3' >Add Employee</Link>
         <h2 className='text-center mb-4'>List Employee</h2>
         <table className='table table-bordered table striped'>
             <thead>
